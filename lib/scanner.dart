@@ -1,3 +1,4 @@
+import 'package:app_mobile_flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:barcode_scan/barcode_scan.dart';
 
@@ -22,18 +23,30 @@ class _ScannerPageState extends State<ScannerPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            RaisedButton(
-                      color: Theme.of(context).primaryColorDark,
-                      textColor: Theme.of(context).primaryColorLight,
-                      onPressed: () => scannQrCode(),
-                      child: Text(
-                        'Scann QRCode',
-                        textScaleFactor: 1.5,
-                      ),
-                    ),
-            Text(
-              code,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            Center(
+                child: RaisedButton(
+                    color: Theme.of(context).primaryColorDark,
+                    textColor: Theme.of(context).primaryColorLight,
+                    onPressed: () => scannQrCode(),
+                    child: Text(
+                      'Scann QRCode',
+                      textScaleFactor: 1.5,
+                    ))),
+            Center(
+              child: Text(
+                code,
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Center(child: 
+              RaisedButton(
+                    color: Theme.of(context).primaryColorDark,
+                    textColor: Theme.of(context).primaryColorLight,
+                    onPressed: () => goToWidgetsPage(),
+                    child: Text(
+                      'Go to Widgets Page',
+                      textScaleFactor: 1.5,
+                    ))
             )
           ],
         ),
@@ -51,4 +64,9 @@ class _ScannerPageState extends State<ScannerPage> {
       print(e);
     }
   }
+
+  goToWidgetsPage(){
+     Navigator.push(context, MaterialPageRoute(builder: (context) => MyWidgets()));
+  }
+
 }
