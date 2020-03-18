@@ -28,8 +28,8 @@ class MyWidgets extends StatelessWidget {
                     child: TextField(
                         decoration: InputDecoration(
                             hintText: "Exemplo de Email Textbox",
-                            icon: Icon(Icons.email)),
-                        maxLines: 10)),
+                            icon: Icon(Icons.email)),                        
+                        maxLines: 4)),
               )
             ],
           ),

@@ -32,22 +32,23 @@ class _ScannerPageState extends State<ScannerPage> {
                       'Scann QRCode',
                       textScaleFactor: 1.5,
                     ))),
+            Divider(),
             Center(
               child: Text(
                 code,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
             ),
-            Center(child: 
-              RaisedButton(
+            Divider(),
+            Center(
+                child: RaisedButton(
                     color: Theme.of(context).primaryColorDark,
                     textColor: Theme.of(context).primaryColorLight,
                     onPressed: () => goToWidgetsPage(),
                     child: Text(
                       'Go to Widgets Page',
                       textScaleFactor: 1.5,
-                    ))
-            )
+                    )))
           ],
         ),
       ),
@@ -65,8 +66,8 @@ class _ScannerPageState extends State<ScannerPage> {
     }
   }
 
-  goToWidgetsPage(){
-     Navigator.push(context, MaterialPageRoute(builder: (context) => MyWidgets()));
+  goToWidgetsPage() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => MyWidgets()));
   }
-
 }

@@ -1,6 +1,6 @@
 import 'package:app_mobile_flutter/scanner.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+//import 'package:flutter/services.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, this.title}) : super(key: key);
@@ -14,7 +14,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   void initState() {
-    SystemChrome.setEnabledSystemUIOverlays([]);
+   // SystemChrome.setEnabledSystemUIOverlays([]);
     super.initState();
   }
 

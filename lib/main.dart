@@ -1,6 +1,8 @@
+import 'package:app_mobile_flutter/sidebar/sidebar_layout.dart';
 import 'package:flutter/material.dart';
 
-import 'login.dart';
+//import 'login.dart';
+//import 'menu_dashboard_layout.dart';
 
 //import 'login.dart';
 
@@ -39,6 +41,23 @@ import 'login.dart';
 //   }
 // }
 
+//versão usando o navigation bar com slide
+// void main() => runApp(MyApp());
+// class MyApp extends StatelessWidget {
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//          primarySwatch: Colors.blue,
+//       ),
+//       home: MenuDashboardPage(),
+//      //home: LoginPage(),
+//     );
+//   }
+// }
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
@@ -49,10 +68,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.white,
+        primaryColor: Colors.white
       ),
-      home: LoginPage(title: 'Login'),
+      home: SideBarLayout(),
+     //home: LoginPage(),
     );
   }
 }
-
