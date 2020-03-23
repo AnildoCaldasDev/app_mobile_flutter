@@ -96,24 +96,39 @@ class _SideBarState extends State<SideBar>
                       ),
                       Divider(
                         color: Colors.white.withOpacity(0.3),
-                        height: 64,
+                        height: 44,
                         thickness: 0.5,
-                        indent: 32,
+                        indent: 22,
                         endIndent: 32,
                       ),
                       MenuItem(icon: Icons.home, title: "Início", onTap: (){ 
                         onIconPressed();
                         BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.HomePageClickedEvent);
                       }),
-                      MenuItem(icon: Icons.person, title: "Minha Conta", onTap: (){ 
+                      // MenuItem(icon: Icons.person, title: "Minha Conta", onTap: (){ 
+                      //   onIconPressed();
+                      //   BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.MyAccountClickedEvent);
+                      // }),
+                      // MenuItem(icon: Icons.shopping_basket, title: "Meus Pedidos", onTap: (){ 
+                      //   onIconPressed();
+                      //   BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.MyOrdersClickedEvent);
+                      // }),
+                      MenuItem(icon: Icons.pie_chart_outlined, title: "Gráficos", onTap: (){
                         onIconPressed();
-                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.MyAccountClickedEvent);
+                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.ChartPageClickedEvent);
                       }),
-                      MenuItem(icon: Icons.shopping_basket, title: "Meus Pedidos", onTap: (){ 
+                      MenuItem(icon: Icons.pie_chart_outlined, title: "Dashboards", onTap: (){
                         onIconPressed();
-                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.MyOrdersClickedEvent);
+                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.DashboardPageClickedEvent);
                       }),
-                      MenuItem(icon: Icons.card_giftcard, title: "Lista de Desejos"),
+                      MenuItem(icon: Icons.pie_chart_outlined, title: "Gráficos", onTap: (){
+                        onIconPressed();
+                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.ChartPageClickedEvent);
+                      }),
+                      MenuItem(icon: Icons.pie_chart_outlined, title: "Scan QRCode", onTap: (){
+                        onIconPressed();
+                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.ScannerPageClickedEvents);
+                      }),
                       Divider(
                         color: Colors.white.withOpacity(0.3),
                         height: 24,

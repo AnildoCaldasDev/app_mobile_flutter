@@ -1,8 +1,9 @@
+import 'package:app_mobile_flutter/bloc.navigation_bloc/navigation_bloc.dart';
 import 'package:app_mobile_flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:barcode_scan/barcode_scan.dart';
 
-class ScannerPage extends StatefulWidget {
+class ScannerPage extends StatefulWidget with NavigationStates{
   ScannerPage({Key key, this.title}) : super(key: key);
   final String title;
 
@@ -18,6 +19,7 @@ class _ScannerPageState extends State<ScannerPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("BarCode Scanner"),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
