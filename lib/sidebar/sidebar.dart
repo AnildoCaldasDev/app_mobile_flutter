@@ -113,10 +113,6 @@ class _SideBarState extends State<SideBar>
                       //   onIconPressed();
                       //   BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.MyOrdersClickedEvent);
                       // }),
-                      MenuItem(icon: Icons.pie_chart_outlined, title: "Gráficos", onTap: (){
-                        onIconPressed();
-                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.ChartPageClickedEvent);
-                      }),
                       MenuItem(icon: Icons.pie_chart_outlined, title: "Dashboards", onTap: (){
                         onIconPressed();
                         BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.DashboardPageClickedEvent);

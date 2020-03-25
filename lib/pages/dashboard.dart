@@ -62,8 +62,8 @@ class _DashboardState extends State<Dashboard> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Dashboars",
-          style: TextStyle(color: Colors.white),
+          "Dashboards",
+          style: TextStyle(color: Colors.black),
         ),
       ),
       body: Container(
