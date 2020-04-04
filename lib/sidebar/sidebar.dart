@@ -125,6 +125,10 @@ class _SideBarState extends State<SideBar>
                         onIconPressed();
                         BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.ScannerPageClickedEvents);
                       }),
+                       MenuItem(icon: Icons.supervised_user_circle, title: "Lista de Usuários", onTap: (){
+                        onIconPressed();
+                        BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.ListUsersPageClickedEvents);
+                      }),
                       Divider(
                         color: Colors.white.withOpacity(0.3),
                         height: 24,

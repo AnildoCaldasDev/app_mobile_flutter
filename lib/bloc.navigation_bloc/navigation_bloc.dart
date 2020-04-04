@@ -2,6 +2,7 @@ import 'package:app_mobile_flutter/pages/accountpage.dart';
 import 'package:app_mobile_flutter/pages/chartpage.dart';
 import 'package:app_mobile_flutter/pages/dashboard.dart';
 import 'package:app_mobile_flutter/pages/home.dart';
+import 'package:app_mobile_flutter/pages/listusers.dart';
 import 'package:app_mobile_flutter/pages/orderspage.dart';
 import 'package:bloc/bloc.dart';
 
@@ -13,7 +14,8 @@ enum NavigationEvents {
   MyOrdersClickedEvent,
   DashboardPageClickedEvent,
   ChartPageClickedEvent,
-  ScannerPageClickedEvents
+  ScannerPageClickedEvents,
+  ListUsersPageClickedEvents
 }
 
 abstract class NavigationStates {}
@@ -43,6 +45,9 @@ class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
        case NavigationEvents.ScannerPageClickedEvents:
         yield ScannerPage();
         break;
+       case NavigationEvents.ListUsersPageClickedEvents:
+        yield ListUsersPage();
+        break;      
     }
   }
 }
