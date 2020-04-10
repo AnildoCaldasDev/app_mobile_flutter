@@ -206,7 +206,7 @@ class _ChartPageState extends State<ChartPage> {
                             _seriesData,
                             animate: true,
                             barGroupingType: charts.BarGroupingType.grouped,
-                            animationDuration: Duration(seconds: 2),
+                            animationDuration: Duration(seconds: 0),
                             //behaviors: [new charts.SeriesLegend()],
                           ),
                         )

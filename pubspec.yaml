@@ -57,6 +57,10 @@ flutter:
   assets:
   - assets/loading.gif
   - assets/ImageProfile.png
+  - assets/account.png
+  - assets/industry.png
+  - assets/listicon.png
+  - assets/timer.png  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
